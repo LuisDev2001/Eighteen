@@ -48,8 +48,10 @@ html {
   position: relative;
 }
 
-.section:first-child {
-  margin: 60px 0 0 0;
+#fullpage {
+  height: auto;
+  width: 100%;
+  /* margin: 75px 0 0 0; */
 }
 
 .section:nth-child(even) {
@@ -69,17 +71,20 @@ html {
   font-size: 2rem;
 }
 
-.goBottom {
+.goBottom,
+.returnTop {
   position: absolute;
   bottom: 25px;
   cursor: pointer;
+  color: #ffffff;
 }
 
-.goBottom i {
+.goBottom i,
+.returnTop i {
   font-size: 2.5rem;
 }
 
-.goBottom.returnTop {
+.returnTop {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,6 +93,6 @@ html {
   font-family: var(--font-noto);
 }
 
-.goBottom.returnTop i {
+.returnTop i {
   margin: 6px 0 0 0;
 }
